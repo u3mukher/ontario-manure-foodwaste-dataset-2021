@@ -9,3 +9,10 @@ Authors:
 
 > **Under review at XYZ**  
 DOI: *[coming soon]*
+
+## 📂 Dataset Access
+
+The full NetCDF file (`Ontario_30m_Manure_FW_N_P_kg_ha.nc`) can be downloaded from:
+
+*Figshare repo link here*
+
