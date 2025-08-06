@@ -1,16 +1,11 @@
 ### `memory_efficient_query.ipynb`
 
-This Jupyter notebook shows how to open the Ontario manure & food-waste NetCDF efficiently and extract just the data you need, without loading the full 30 m grid into memory. In particular, it will:
+This Jupyter notebook shows how to open the Ontario manure & food waste NetCDF in a **memory-efficient** way using chunked reads via `xarray`. Rather than loading the entire 30 m grid at once, it reads only the data needed for basic statistics. The notebook demonstrates:
 
-1. Open the NetCDF with Dask-backed Xarray (`chunks="auto"`).  
-2. Select a single variable (e.g. `total_manure_N`).  
-3. Subset that variable over a user-specified spatial window.  
-4. Compute the percentage of cells with non-zero values (i.e. spatial coverage).  
-5. Plot the subset to visualize spatial patterns.
+1. Opening the NetCDF file with `xarray` using chunked access (`chunks="auto"`).  
+2. Extracting a single variable of interest (e.g., `total_manure_N`).  
+3. Computing the **Ontario-wide mean** and **non-zero spatial coverage**.  
+4. Computing the same statistics for a specific region (Windsor → Ottawa extent).  
+5. Avoiding full-grid reads while obtaining useful summary metrics.
 
-### Running the example notebook
-
-1. Download `memory_efficient_query.ipynb` into the `Codes/` folder.
-2. Download `Ontario_30m_Manure_FW_N_P_kg_ha.nc` into the `Data/` folder.
-3. Open the notebook in Jupyter (e.g. `jupyter lab Codes/memory_efficient_query.ipynb`) and run the cells to see how to query a single variable efficiently.
-
+This example is intended for users new to NetCDF or `xarray` who want to work with large spatial datasets without high memory use.
