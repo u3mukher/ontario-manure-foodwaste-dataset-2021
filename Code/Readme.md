@@ -1,6 +1,6 @@
 ### `memory_efficient_query.ipynb`
 
-This Jupyter notebook shows how to open the Ontario manure & food waste NetCDF in a **memory-efficient** way using chunked reads via `xarray`. Rather than loading the entire 30 m grid at once, it reads only the data needed for distribution statistics. The notebook demonstrates:
+This Jupyter notebook shows how to open the Ontario manure & food waste NetCDF in a memory-efficient way using chunked reads via `xarray`. Rather than loading the entire 30 m grid at once, it reads only the data needed for distribution statistics. The notebook demonstrates:
 
 1. Opening the NetCDF file with `xarray` using chunked access (`chunks="auto"`).  
 2. Extracting a single variable of interest (e.g., `total_manure`).  
