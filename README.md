@@ -4,6 +4,7 @@
 
 This repository provides the processing scripts, sample notebooks, and folder structure for using the following dataset:
 Authors:
+
 **Ushnik Mukherjee¹**, **Jake DeBruyn²**, **Juliane Mai³**, **Rebecca Saari¹**, **Nandita B. Basu¹˒³˒⁴**
 
 ¹ Department of Civil and Environmental Engineering, University of Waterloo, Waterloo, ON, Canada  
