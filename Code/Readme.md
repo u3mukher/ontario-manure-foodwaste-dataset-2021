@@ -19,7 +19,7 @@ This example is intended for users new to NetCDF or `xarray` who need to derive 
 ### `Total_Manure_3by1_Plt.py` — 3×1 Map Panels (Manure, N, P)
 
 This script generates a three-panel (3×1) map visualization showing total manure mass and associated nutrient contents (N and P) across Ontario.  
-It is designed for large rasters and uses **xarray** + **rioxarray** for efficient reprojection and nodata handling.
+It is designed for large rasters and uses `xarray` + `rioxarray` for efficient reprojection and nodata handling.
 
 #### Demonstrates
 - Opening a large NetCDF dataset with `xarray` and maintaining geospatial metadata using `rioxarray`.  
