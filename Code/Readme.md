@@ -51,7 +51,7 @@ It is designed for large rasters and uses **xarray** + **rioxarray** for efficie
 
 ---
 
-### `Total_Manure_3by1_Plt.py` — 3×1 Map Panels (FW, FW-N, FW-P)
+### `Total_FW_3by1_Plt.py` — 3×1 Map Panels (FW, FW-N, FW-P)
 
 This script renders a three-panel figure showing food-waste mass and nutrient intensities (N, P) per hectare, following the same structure as the manure map.
 
