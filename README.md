@@ -27,4 +27,4 @@ The full NetCDF file (`Ontario_30m_Dataset.nc`) can be downloaded from:
 
 - `Codes/` – Python scripts and Jupyter notebooks for querying and visualizing the dataset.
 - `Figures/` – Optional maps/plots used in the data paper.
-- `requirements.txt` – List of required Python packages.
+
