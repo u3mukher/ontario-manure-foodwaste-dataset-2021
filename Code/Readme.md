@@ -16,7 +16,7 @@ This Jupyter notebook shows how to open the Ontario manure & food waste NetCDF i
 This example is intended for users new to NetCDF or `xarray` who need to derive summary statistics from large spatial datasets on standard hardware.
 
 ---
-### `manure_plot.py` — 3×1 Map Panels (Manure, N, P)
+### `Total_Manure_3by1_Plt.py` — 3×1 Map Panels (Manure, N, P)
 
 This script generates a three-panel (3×1) map visualization showing total manure mass and associated nutrient contents (N and P) across Ontario.  
 It is designed for large rasters and uses **xarray** + **rioxarray** for efficient reprojection and nodata handling.
@@ -34,7 +34,7 @@ It is designed for large rasters and uses **xarray** + **rioxarray** for efficie
 
 #### Key Behaviors
 - **Bins:** Controlled by `BINS_MAN`, `BINS_N`, and `BINS_P` arrays.  
-- **Zero Handling:** Zeros are masked to white while labels keep their `<1`, `<5`, `<2` formatting.  
+- **Zero Handling:** Zeros are masked to white and values in bin labels keep their `<1`, `<5`, `<2` formatting.  
 - **Nodata:** Outside-Ontario pixels (`–9999`) remain transparent after reprojection.  
 - **Performance:** Large rasters are automatically downscaled (average resampling) before plotting.
 
@@ -51,7 +51,7 @@ It is designed for large rasters and uses **xarray** + **rioxarray** for efficie
 
 ---
 
-### `food_waste_plot.py` — 3×1 Map Panels (FW, FW-N, FW-P)
+### `Total_Manure_3by1_Plt.py` — 3×1 Map Panels (FW, FW-N, FW-P)
 
 This script renders a three-panel figure showing food-waste mass and nutrient intensities (N, P) per hectare, following the same structure as the manure map.
 
@@ -68,7 +68,7 @@ This script renders a three-panel figure showing food-waste mass and nutrient in
 #### Key Behaviors
 - **Bins:** `BINS_FW`, `BINS_FW_N`, and `BINS_FW_P` define color intervals.  
 - **Units:** Only the FW-mass panel is rescaled to ×10³ kg ha⁻¹ yr⁻¹.  
-- **Zeros:** Masked to white; legend labels remain in `<0.6`, `<5`, `<1` form.  
+- **Zeros:** Masked to white; Bin labels remain in `<0.6`, `<5`, `<1` form.  
 - **Nodata:** `–9999` handled consistently through reprojection and clipping.
 
 #### Inputs
